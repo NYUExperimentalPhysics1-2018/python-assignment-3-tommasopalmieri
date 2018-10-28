@@ -21,14 +21,14 @@ drawBoard(tank1box,tank2box,obstacleBox,1)
 hit = tankShot(tank2box, obstacleBox, 12.5,2.5,100,70)
 plt.title ('a shot that goes over the target')
 if hit:
-    print ('you incorrectly detected a hit')
+    print ('you incorrectly detected a hit -1')
 
 plt.figure(2)
 drawBoard(tank1box,tank2box,obstacleBox,1)
 hit = tankShot(tank2box, obstacleBox, 12.5,2.5,100,60)
 plt.title ('a shot that hits the obstacle')
 if hit:
-    print ('you incorrectly detected a hit')
+    print ('you incorrectly detected a hit -2 ')
 
 plt.figure(3)
 drawBoard(tank1box,tank2box,obstacleBox,1)
@@ -37,4 +37,4 @@ plt.title ('a high arcing kill shot!')
 if hit:
     print ('you correctly detected a hit')
 else:
-    print ('you incorrectly reported a miss')
+    print ('you incorrectly reported a miss -3')
